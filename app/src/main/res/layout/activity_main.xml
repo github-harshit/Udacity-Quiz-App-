@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical">
+
+  <TextView
+      android:id="@+id/name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Fun with facts"
+      android:textSize="26sp"
+      android:layout_margin="12dp"
+      android:textColor="#212121">
+
+
+
+  </TextView>
+  <TextView
+    android:id="@+id/questionOne"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+     android:text="Question 1 : Who proposed theory of relativity"
+      style="@style/CustomStyle">
+
+  </TextView>
+
+  <EditText
+    android:id="@+id/edit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textCapWords"
+    android:hint="Type here"
+      style="@style/OptionStyle">
+
+
+</EditText>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    android:text="Question 2 Who wrote A Brief History Of Time"
+      style="@style/CustomStyle">
+
+  </TextView>
+<EditText
+  android:id="@+id/editTwo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+  android:inputType="textCapWords"
+  android:hint="Type here"
+    style="@style/OptionStyle">
+
+
+
+</EditText>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    android:text="Question 3 : Which of the following  had won noble prize in physics "
+      style="@style/CustomStyle">
+
+  </TextView>
+  <CheckBox
+      android:id="@+id/firstCheckBox"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    android:text="James Peebles"
+      style="@style/OptionStyle">
+
+  </CheckBox>
+  <CheckBox android:id="@+id/secondCheckBox"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Subrahmanyan Chandrasekhar"
+      style="@style/OptionStyle">
+
+
+
+  </CheckBox>
+  <CheckBox android:id="@+id/thirdCheckBox"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Har Gobind Khorana"
+      style="@style/OptionStyle">
+
+
+
+  </CheckBox>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    android:text="Question 4 : Can gold be created from other elements? "
+      style="@style/CustomStyle">
+
+  </TextView>
+  <RadioGroup
+      android:id="@+id/firstRadio"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+  <RadioButton
+      android:id="@+id/yes_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Yes"
+      android:textAppearance="?android:textAppearanceMedium"
+      style="@style/OptionStyle">
+
+  </RadioButton>
+  <RadioButton
+      android:id="@+id/no_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    android:text="No"
+    android:textAppearance="?android:textAppearanceMedium"
+      style="@style/OptionStyle">
+
+  </RadioButton>
+  </RadioGroup>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Question 5: Does light bends around corners ?"
+      style="@style/CustomStyle">
+
+  </TextView>
+  <RadioGroup
+    android:id="@+id/secondRadio"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    android:orientation="vertical">
+  <RadioButton
+      android:id="@+id/yesTwo_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Yes"
+      android:textAppearance="?android:textAppearanceMedium"
+      style="@style/OptionStyle">
+
+  </RadioButton>
+  <RadioButton
+      android:id="@+id/noTwo_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="No"
+      android:textAppearance="?android:textAppearanceMedium"
+      style="@style/OptionStyle">
+
+  </RadioButton>
+  </RadioGroup>
+
+
+
+
+    <Button
+        android:id="@+id/change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:onClick="magic">
+
+    </Button>
+
+
+
+
+
+
+
+</LinearLayout>
+</ScrollView>
