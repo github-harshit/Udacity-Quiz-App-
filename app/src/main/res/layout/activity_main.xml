@@ -15,7 +15,7 @@
       android:id="@+id/name"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Fun with facts"
+      android:text="@string/main_heading"
       android:textSize="26sp"
       android:layout_margin="12dp"
       android:textColor="#212121">
@@ -27,7 +27,7 @@
     android:id="@+id/questionOne"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-     android:text="Question 1 : Who proposed theory of relativity"
+     android:text="@string/Question_1"
       style="@style/CustomStyle">
 
   </TextView>
@@ -37,7 +37,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:inputType="textCapWords"
-    android:hint="Type here"
+    android:hint="@string/edit_hint_first"
       style="@style/OptionStyle">
 
 
@@ -45,7 +45,7 @@
   <TextView
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-    android:text="Question 2 Who wrote A Brief History Of Time"
+    android:text="@string/Question_2"
       style="@style/CustomStyle">
 
   </TextView>
@@ -54,7 +54,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
   android:inputType="textCapWords"
-  android:hint="Type here"
+  android:hint="@string/edit_hint_second"
     style="@style/OptionStyle">
 
 
@@ -63,7 +63,7 @@
   <TextView
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-    android:text="Question 3 : Which of the following  had won noble prize in physics "
+    android:text="@string/Question_3"
       style="@style/CustomStyle">
 
   </TextView>
@@ -71,14 +71,14 @@
       android:id="@+id/firstCheckBox"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-    android:text="James Peebles"
+    android:text="@string/checkbox_option_first"
       style="@style/OptionStyle">
 
   </CheckBox>
   <CheckBox android:id="@+id/secondCheckBox"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Subrahmanyan Chandrasekhar"
+      android:text="@string/checkbox_option_second"
       style="@style/OptionStyle">
 
 
@@ -87,7 +87,7 @@
   <CheckBox android:id="@+id/thirdCheckBox"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Har Gobind Khorana"
+      android:text="@string/checkbox_option_3"
       style="@style/OptionStyle">
 
 
@@ -96,7 +96,7 @@
   <TextView
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-    android:text="Question 4 : Can gold be created from other elements? "
+    android:text="@string/Question_4"
       style="@style/CustomStyle">
 
   </TextView>
@@ -108,7 +108,7 @@
       android:id="@+id/yes_button"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Yes"
+      android:text="@string/radio_yes"
       android:textAppearance="?android:textAppearanceMedium"
       style="@style/OptionStyle">
 
@@ -117,7 +117,7 @@
       android:id="@+id/no_button"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-    android:text="No"
+    android:text="@string/radio_no"
     android:textAppearance="?android:textAppearanceMedium"
       style="@style/OptionStyle">
 
@@ -126,7 +126,7 @@
   <TextView
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Question 5: Does light bends around corners ?"
+      android:text="@string/Question_5"
       style="@style/CustomStyle">
 
   </TextView>
@@ -139,7 +139,7 @@
       android:id="@+id/yesTwo_button"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Yes"
+      android:text="@string/radio_yes"
       android:textAppearance="?android:textAppearanceMedium"
       style="@style/OptionStyle">
 
@@ -148,7 +148,7 @@
       android:id="@+id/noTwo_button"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="No"
+      android:text="@string/radio_no"
       android:textAppearance="?android:textAppearanceMedium"
       style="@style/OptionStyle">
 
@@ -162,8 +162,8 @@
         android:id="@+id/change"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit"
-        android:onClick="magic">
+        android:text="@string/submit"
+        android:onClick="submit">
 
     </Button>
 

@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">myQuiz</string>
+    <string name="Question_4">Question 4 : Can gold be created from other elements?</string>
+    <string name="main_heading">Fun with facts</string>
+    <string name="Question_1">Question 1 : Who proposed theory of relativity</string>
+    <string name="edit_hint_first">Type here</string>
+    <string name="Question_2">Question 2 Who wrote A Brief History Of Time</string>
+    <string name="edit_hint_second">Type here</string>
+    <string name="Question_3">Question 3 : Which of the following had won noble prize in physics</string>
+    <string name="checkbox_option_first">James Peebles</string>
+    <string name="checkbox_option_second">Subrahmanyan Chandrasekhar</string>
+    <string name="checkbox_option_3">Har Gobind Khorana</string>
+    <string name="radio_yes">Yes</string>
+    <string name="radio_no">No</string>
+    <string name="Question_5">Question 5: Does light bends around corners ?</string>
+    <string name="radio_yes_second">Yes</string>
+    <string name="radio_no_second">No</string>
+    <string name="submit">Submit</string>
+
 </resources>
+
