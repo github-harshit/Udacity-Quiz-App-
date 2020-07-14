@@ -7,11 +7,8 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
     private int score = 0;
@@ -25,27 +22,27 @@ public class MainActivity extends AppCompatActivity {
 
     public void submit(View view) {
         if (getAnswerOne()) {
-            countRight += 1;
+            countRight++;
         }
         if (getAnswerTwo()) {
-            countRight += 1;
+            countRight++;
         }
         if (getAnswerThree()) {
-            countRight += 1;
+            countRight++;
         }
         if (getAnswerFour()) {
-            countRight += 1;
+            countRight++;
         }
         if (getAnswerFive()) {
-            countRight += 1;
+            countRight++;
         }
         score = countRight;
         Toast.makeText(this, " Your score is " + score + " Right Answers = " + countRight + " Wrong Answers = " + (5 - score) + "", Toast.LENGTH_LONG).show();
     }
 
     public boolean getAnswerOne() {
-        String rightAnswerOne = "Albert Einstein";
-        EditText answerOne = (EditText) findViewById(R.id.edit);
+        String rightAnswerOne = "Einstein";
+        EditText answerOne = findViewById(R.id.edit);
         String myAnswerOne = answerOne.getText().toString();
         if (myAnswerOne.equalsIgnoreCase(rightAnswerOne)) {
             return true;
@@ -54,8 +51,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public boolean getAnswerTwo() {
-        String rightAnswerTwo = "Stefan Hawking";
-        EditText answerTwo = (EditText) findViewById(R.id.editTwo);
+        String rightAnswerTwo = "Hawking";
+        EditText answerTwo = findViewById(R.id.editTwo);
         String myAnswertwo = answerTwo.getText().toString();
         if (myAnswertwo.equalsIgnoreCase(rightAnswerTwo)) {
             return true;
@@ -64,13 +61,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public boolean getAnswerThree() {
-        CheckBox checkOne = (CheckBox) findViewById(R.id.firstCheckBox);
+        CheckBox checkOne = findViewById(R.id.firstCheckBox);
         boolean hasCheckOne = checkOne.isChecked();
 
-        CheckBox checkTwo = (CheckBox) findViewById(R.id.secondCheckBox);
+        CheckBox checkTwo = findViewById(R.id.secondCheckBox);
         boolean hasCheckSecond = checkTwo.isChecked();
 
-        CheckBox checkThree = (CheckBox) findViewById(R.id.thirdCheckBox);
+        CheckBox checkThree = findViewById(R.id.thirdCheckBox);
         boolean hasCheckThird = checkThree.isChecked();
 
         if ((hasCheckOne) && (hasCheckSecond) && (!hasCheckThird)) {
@@ -82,10 +79,10 @@ public class MainActivity extends AppCompatActivity {
     public boolean getAnswerFour() {
 
 
-        RadioButton heckYes = (RadioButton) findViewById(R.id.yes_button);
+        RadioButton heckYes = findViewById(R.id.yes_button);
         boolean myHeckYes = heckYes.isChecked();
 
-        RadioButton heckNo = (RadioButton) findViewById(R.id.no_button);
+        RadioButton heckNo = findViewById(R.id.no_button);
         boolean myHeckNo = heckNo.isChecked();
         if (myHeckYes) {
             return true;
@@ -95,10 +92,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public boolean getAnswerFive() {
-        RadioButton heckYesTwo = (RadioButton) findViewById(R.id.yesTwo_button);
+        RadioButton heckYesTwo = findViewById(R.id.yesTwo_button);
         boolean myHeckYesTwo = heckYesTwo.isChecked();
 
-        RadioButton heckNoTwo = (RadioButton) findViewById(R.id.noTwo_button);
+        RadioButton heckNoTwo = findViewById(R.id.noTwo_button);
         boolean myHeckNoTwo = heckNoTwo.isChecked();
         if (myHeckYesTwo) {
             return true;
